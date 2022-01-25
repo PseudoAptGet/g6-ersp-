@@ -1,0 +1,6 @@
+links: 
+dataset: download everything and put into data folder. Best to keep things in same directory to minimize file location changes 
+https://drive.google.com/drive/u/0/folders/15SiV5WeI2lUapQtCKevuC1qDzM3ugA4p
+
+
+when uploading, please don't upload the data files. Too large. 
