@@ -16,19 +16,18 @@ public class studentClustering {
     
     public static int getNumTeachers(){
 
-        HashMap<Integer, Integer> x = new HashMap<Integer, Integer>();
-        int numTeachers = 0; 
+        HashMap<Integer, Integer> x = new HashMap<Integer, Integer>(); //hashset 
+        int numTeachers = 0;  // tracker of numStudents
 
-        try (BufferedReader br = new BufferedReader(new FileReader("data/TeacherActivityOctober18.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("data/TeacherActivityOctober18.csv"))) { // FELLAS, CHANGE YOUR FILENAME, AND ADD CORRECT PATH. 
             String line;
-            line = br.readLine();
-
-            while((line = br.readLine()) != null){
+            line = br.readLine(); //SKIP THE FIRST LINE BC ITS THE HEADERS/USELESS
+            while((line = br.readLine()) != null){ //KEEP ON READING LINES
                 
-                ArrayList<String> record = new ArrayList<String>(Arrays.asList(line.split(",")));
-                String y = record.get(1);   
+                ArrayList<String> record = new ArrayList<String>(Arrays.asList(line.split(","))); //SPLIT ON COMMAS. GET ARRAYLIST OF ELEMENTS IN A ROW
+                String y = record.get(1);   //GET PARTICULAR ELEMENT AT ?,IMPORTANT,.....
                 
-                if(x.containsKey(Integer.parseInt(y))){
+                if(x.containsKey(Integer.parseInt(y))){ //HASHMAP. USELESS, BUT CHECK JAVADOC
                     int newVal = x.get(Integer.parseInt(y));
                     int next = newVal+1;
                     x.replace(Integer.parseInt(y), next);
@@ -46,7 +45,7 @@ public class studentClustering {
                 }
             }
 
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new StringBuilder(); //FOR DEBUGGING
             for (Map.Entry<Integer, Integer> entry : x.entrySet()) {
                 sb.append(entry.getKey());
                 sb.append('=');
