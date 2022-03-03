@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class App {
+public class sizeCount {
     public static void main(String[] args) throws Exception {
 
         try (BufferedReader br = new BufferedReader(new FileReader("data/StudentProblemHistory_October18(1).csv"))) {
@@ -17,7 +17,7 @@ public class App {
             //     records.add(Arrays.asList(values));
             // }
         }
-        System.out.println(App.getNumStudents());
+        System.out.println(sizeCount.getNumStudents());
 
         // data/StudentProblemHistory_October18(1).csv
 
