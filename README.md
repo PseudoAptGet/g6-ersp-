@@ -17,6 +17,9 @@ NOTE: please get all input files related to student and teacher data from the Ma
 - studentAverages.csv: has a list of all the students, as well as their key metrics (average mistakes, average time taken per problme, average attempts before a problem is solved, average number of hints before problem is solved, average problem solve rate, as well as what problems they saw. 
 - teacher-to-student.csv: has a list of teacher id's, as well as the student id's they map to. 
 - teacher_action_freq_data.txt: shows the clusters of teacher actions, followed by the teacher frequency of those actions as a (int teacherId, int frequency) pair. 
+- TODO: For each cluster of teachers, pool their students into one group. 
+- TODO: For each pool of student, generate their performance metric average. 
+- TODO: Do 2-sample t-tests to calculate statistical significance of each pool of students. 
 
 # HOW TO CHAIN THE SCRIPTS
 - First, check your teacher frequency log csv. Run teacher analysis to it to produce the teacher_action_freq_data.txt script. 
