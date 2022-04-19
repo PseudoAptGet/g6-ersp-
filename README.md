@@ -21,11 +21,31 @@ NOTE: please get all input files related to student and teacher data from the Ma
 - TODO: For each pool of student, generate their performance metric average. 
 - TODO: Do 2-sample t-tests to calculate statistical significance of each pool of students. 
 
-# HOW TO CHAIN THE SCRIPTS
+## HOW TO CHAIN THE SCRIPTS
 - First, check your teacher frequency log csv. Run teacher analysis to it to produce the teacher_action_freq_data.txt script. 
 - Cluster the teachers on (https://people.revoledu.com/kardi/tutorial/kMean/Online-K-Means-Clustering.html) to see the clusters. 
 - Generate studentAverages.csv by going through the student data with (insert here) to get student averages.
 - Generate teacher_to_student.csv by looking through the student activity log to parse the teacher averages. 
 - TODO: For each cluster of teachers in teacher_action_freq_data.txt, calculate their average student statistics by using studentAverages.csv
 - TODO: For each cluster's average, compare it to the global average (using 2 sample t tests) and assess whether there is a statistically significant difference. 
+
+# USEFUL RESOURCES
+For I/O: 
+- https://docs.oracle.com/javase/7/docs/api/java/io/FileReader.html
+- https://docs.oracle.com/javase/8/docs/api/java/io/FileWriter.html
+
+For Python Review: 
+- https://www.freecodecamp.org/learn/scientific-computing-with-python/
+- https://docs.python.org/3/tutorial/datastructures.html
+
+For Java Review: 
+- https://runestone.academy/runestone/books
+- https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+- https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html
+
+For Statistical Analysis Libraries:
+- https://scikit-learn.org/stable/
+
+
+
 
