@@ -8,4 +8,10 @@ We use this approach because Java is best optimized for reading in large amounts
 
 # SETUP 
 
-We simply provide the files necessary to 
+We simply provide the files necessary to do the analysis in an ordered manner. We will describe what the scripts do in the section below, as well as how to optimally chain them. You, the user, have the job of configuring multiple environments so that the program runs as expected, and the methods are chained in the appropriate method (manually if need be). Likewise, you need to manipulate the filepath of the data csv's so that the scripts have access to their input. 
+
+# SCRIPT DESCRIPTION + USAGE
+
+
+
+# HOW TO CHAIN THE SCRIPTS
