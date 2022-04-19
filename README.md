@@ -6,4 +6,6 @@ In order to have cross-platform transfer of data, and to enable future cohorts t
 
 We use this approach because Java is best optimized for reading in large amounts of data, and conducting conputationally expensive tasks, but Python and R has better library support for standard functions such as t-tests and k-means clustering. Having separate outputs at each step ensures that proper best practices can be taken at each step without worrying about data interaction between different languages, and creating a script that compiles everything.
 
+# SETUP 
 
+We simply provide the files necessary to 
